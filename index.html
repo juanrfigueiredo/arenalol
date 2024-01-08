@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arena Randomizer</title>
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,6 +16,10 @@
     <div class="container w-75 mt-3">
       <div class="header">
         <h1>Arena Randomizer</h1>
+        <!--        
+          <input type="checkbox" id="ckShowRepetion" />
+          <label for="ckShowRepetion">Mostrar duplas repetidas</label>
+        -->
         <hr />
       </div>
       <div class="main">
@@ -87,6 +92,7 @@
           </div>
         </form>
         <button class="btn btn-success" id="btnRandomize">Randomize</button>
+
         <table
           id="resultTable"
           class="table table-striped table-bordered mt-3"

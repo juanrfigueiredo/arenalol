@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'BeaufortLol-Bold';
+    src: url('./fonts/BeaufortForLoL-OTF/BeaufortforLOL-Bold.otf');
+    font-weight: bold;
+}
+
+
+
+h1 {
+    font-family: 'BeaufortLol-Bold';
+    font-size: 50px;
+}
