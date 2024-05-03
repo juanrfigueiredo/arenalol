@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 @font-face {
     font-family: 'BeaufortForLoL-Bold';
     src: url(/assests/BeaufortForLoL-TTF/BeaufortforLOL-Bold.ttf);
@@ -16,12 +19,13 @@
 
 
 body {
-    font-family: 'Spiegel-Regular';
+    font-family: "Bree Serif", serif;
     background-color: #010A13;
 }
 
 
 h1 {
+    font-family: "Open Sans", sans-serif;
     color: #C89B3C;
     font-family: 'BeaufortForLoL-Bold';
 }
