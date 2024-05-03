@@ -17,15 +17,16 @@ function formarDuplas(pessoas) {
   let duplas = [];
 
   while (pessoasRestantes.length >= 2) {
-    let duo = [];
+    let randomIndices = [];
+    while (randomIndices.length < 2) {
+      let randomIndex = Math.floor(Math.random() * pessoasRestantes.length);
+      if (!randomIndices.includes(randomIndex)) {
+        randomIndices.push(randomIndex);
+      }
+    }
 
-    let randomIndex1 = Math.floor(Math.random() * pessoasRestantes.length);
-    duo.push(pessoasRestantes[randomIndex1]);
-    pessoasRestantes.splice(randomIndex1, 1);
-
-    let randomIndex2 = Math.floor(Math.random() * pessoasRestantes.length);
-    duo.push(pessoasRestantes[randomIndex2]);
-    pessoasRestantes.splice(randomIndex2, 1);
+    let duo = randomIndices.map(index => pessoasRestantes[index]);
+    randomIndices.sort((a, b) => b - a).forEach(index => pessoasRestantes.splice(index, 1));
     duo = duo.sort();
     duplas.push(duo);
   }
@@ -36,7 +37,6 @@ function formarDuplas(pessoas) {
 
   return duplas;
 }
-
 function getPersonArray() {
   let persons = document.querySelectorAll("#person");
   let personsArray = [];
